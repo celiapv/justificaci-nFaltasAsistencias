@@ -55,20 +55,20 @@
                 <p>Faltó a clase en la/s fecha/s:</p>
                 <div class="input-field col s6">
                      
-                <input type = "date" id="fechaInicio" name="fechaInicio" class = "datepicker" />
+                <input type = "date" id="fecha_inicio" name="fecha_inicio" class = "datepicker" />
                 <!-- <label>Fecha Inicio</label>-->
               </div>  
               <div class="input-field col s6">
                             
-                <input type = "date" id="fechaFin" name="fechaFin" class = "datepicker" />
+                <input type = "date" id="fecha_fin" name="fecha_fin" class = "datepicker" />
                 <!-- <label>Fecha Fin</label>  -->
               </div>  <p>Número de horas:</p>
               <div class="input-field col s6">
-                <input id="horasLectivas" type="text" name="horasLectivas" class="validate">
+                <input id="horas_lectivas" type="text" name="horas_lectivas" class="validate">
                 <label for="horasLectivas">Horas lectivas</label>
               </div>
               <div class="input-field col s6">
-                <input id="horasComplementarias"  name="horasComplementarias" type="text" class="validate">
+                <input id="horas_colectivas"  name="horas_colectivas" type="text" class="validate">
                 <label for="horasComplementarias">Horas complementarias</label>
               </div>
               
