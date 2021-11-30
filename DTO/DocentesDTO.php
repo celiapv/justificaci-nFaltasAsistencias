@@ -1,11 +1,23 @@
 <?php
 include_once 'DepartamentosDTO.php';
 
+/**
+* @ORM\Entity
+* @ORM\Table(name="docente")
+*/
 class Docente{
+    /** @ORM\Id @ORM\Column(type="integer") @ORM\GeneratedValue **/
     private $id;
+    /** @ORM\Column(type="string") **/
     private $nombre;
+    /** @ORM\Column(type="string") **/
     private $dni;
+    /** @ORM\Column(type="string") **/
     private $nrp;
+    /**
+    * @ORM\ManyToOne(targetEntity="Departamento")
+    * @ORM\JoinColumn(name="departamento", referencedColumnName="id")
+    **/
     private $departamento;
 
     function __construct($id, $nombre, $dni, $nrp, $departamento){

@@ -1,15 +1,41 @@
 <?php
 
+/**
+* @ORM\Entity
+* @ORM\Table(name="justificacion")
+*/
 class Justificacion{
+    /** @ORM\Id @ORM\Column(type="integer") @ORM\GeneratedValue **/
     private $id;
+    /** @ORM\Column(type="date") **/
     private $fechaInicio;
+    /** @ORM\Column(type="date") **/
     private $fechaFin;
+    /** @ORM\Column(type="date") **/
     private $fechaFirma;
+    /** @ORM\Column(type="integer") **/
     private $horasLectivas;
+    /** @ORM\Column(type="integer") **/
     private $horasComplementarias;
+    /**
+    * @ORM\ManyToOne(targetEntity="Docente")
+    * @ORM\JoinColumn(name="docente", referencedColumnName="id")
+    **/
     private $docente;
+    /**
+    * @ORM\ManyToOne(targetEntity="Documento")
+    * @ORM\JoinColumn(name="documentos", referencedColumnName="id")
+    **/
     private $documentos;
+    /**
+    * @ORM\ManyToOne(targetEntity="Motivo")
+    * @ORM\JoinColumn(name="motivos", referencedColumnName="id")
+    **/
     private $motivos;
+    /**
+    * @ORM\ManyToOne(targetEntity="OtroMotivo")
+    * @ORM\JoinColumn(name="otros_motivos", referencedColumnName="id")
+    **/
     private $otrosMotivos;
 
     public function __construct($id, $fechaInicio, $fechaFin, $fechaFirma, $horasLectivas, $horasComplementarias, $docente, $documentos, $motivos, $otrosMotivos){

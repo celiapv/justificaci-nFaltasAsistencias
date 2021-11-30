@@ -1,8 +1,15 @@
 <?php
 
+/**
+* @ORM\Entity
+* @ORM\Table(name="documentos")
+*/
 class Documento{
+    /** @ORM\Id @ORM\Column(type="integer") @ORM\GeneratedValue **/
     private $id;
+    /** @ORM\Column(type="string") **/
     private $ruta;
+    /** @ORM\Column(type="string") **/
     private $nombre;
 
     public function __construct($id, $ruta, $nombre){

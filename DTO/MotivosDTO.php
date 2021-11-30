@@ -1,7 +1,13 @@
 <?php
 
+/**
+* @ORM\Entity
+* @ORM\Table(name="motivos")
+*/
 class Motivo{
+    /** @ORM\Id @ORM\Column(type="integer") @ORM\GeneratedValue **/
     private $id;
+    /** @ORM\Column(type="string") **/
     private $nombre;
 
     function __construct($id, $nombre){

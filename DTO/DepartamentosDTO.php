@@ -1,7 +1,14 @@
 <?php
+    /**
+    * @ORM\Entity
+    * @ORM\Table(name="departamentos")
+    */
     class Departamento{
+        /** @ORM\Id @ORM\Column(type="integer") @ORM\GeneratedValue **/
         private $id;
+        /** @ORM\Column(type="string") **/
         private $nombre;
+
 
         function __construct($id, $nombre){
             $this->id = $id;
