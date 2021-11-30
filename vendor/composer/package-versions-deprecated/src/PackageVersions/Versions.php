@@ -46,9 +46,11 @@ final class Versions
   'doctrine/lexer' => '1.2.1@e864bbf5904cb8f5bb334f99209b48018522f042',
   'doctrine/orm' => '2.10.2@81d472f6f96b8b571cafefe8d2fef89ed9446a62',
   'doctrine/persistence' => '2.2.3@5e7bdbbfe9811c06e1f745d1c166647d5c47d6ee',
+  'phpmailer/phpmailer' => 'v6.5.3@baeb7cde6b60b1286912690ab0693c7789a31e71',
   'psr/cache' => '1.0.1@d11b50ad223250cf17b86e38383413f5a6764bf8',
   'psr/container' => '1.1.2@513e0666f7216c7459170d56df27dfcefe1689ea',
   'psr/log' => '1.1.4@d49695b909c3b7628b6289db5479a1c204601f11',
+  'spipu/html2pdf' => 'v5.1.0@7953415df897c2c9450d7a90480f18f7e044a2e9',
   'symfony/cache' => 'v5.4.0@d97d6d7f46cb69968f094e329abd987d5ee17c79',
   'symfony/cache-contracts' => 'v2.5.0@ac2e168102a2e06a2624f0379bde94cd5854ced2',
   'symfony/console' => 'v5.4.0@ec3661faca1d110d6c307e124b44f99ac54179e3',
@@ -63,7 +65,8 @@ final class Versions
   'symfony/service-contracts' => 'v2.5.0@1ab11b933cd6bc5464b08e81e2c5b07dec58b0fc',
   'symfony/string' => 'v5.4.0@9ffaaba53c61ba75a3c7a3a779051d1e9ec4fd2d',
   'symfony/var-exporter' => 'v5.4.0@d59446d6166b1643a8a3c30c2fa8e16e51cdbde7',
-  '__root__' => 'dev-master@b3a10a7c41f1900aa6629611de2af7b1ad9324f2',
+  'tecnickcom/tcpdf' => '6.4.2@172540dcbfdf8dc983bc2fe78feff48ff7ec1c76',
+  '__root__' => 'dev-master@0ff12faee548dd9d085057d43689b6cc1f99f324',
 );
 
     private function __construct()

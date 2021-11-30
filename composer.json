@@ -3,9 +3,9 @@
     "require": {
 
         "doctrine/orm": "^2.6.2",
-
-        "symfony/cache": "^5.3"
-
+        "symfony/cache": "^5.3",
+        "spipu/html2pdf": "^5.1",
+        "phpmailer/phpmailer": "^6.5"
     }
 
 }
